@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>5 students</h1>
+    <table>
+            <tr>
+            <th>ROLL NO</th>
+            <!-- <th>CLASS</th> -->
+            <th colspan="2"> NAME</th>
+            <!-- <th>LAST NAME</th> -->
+        </tr>
+        <tr>
+            <th rowspan="2">1</th>
+            <td>NAME 1</td>
+            <td>LAST NAME !</td>
+        </tr>
+        <tr>
+            <!-- <td>2</td> -->
+            <td>NAME 2</td>
+            <td>LAST NAME 2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>NAME 3</td>
+            <td>LAST NAME 3</td>
+        </tr>
+    </table>
+</body>
+</html>

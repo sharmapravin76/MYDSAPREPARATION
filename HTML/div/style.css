@@ -1,0 +1,10 @@
+h1{
+    background-color: red;
+    color: green;
+}
+.hello{
+    border: 2px solid black;
+}
+#hello{
+    border: 10px solid blue;
+}
