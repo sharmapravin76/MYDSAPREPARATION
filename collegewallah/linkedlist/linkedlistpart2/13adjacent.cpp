@@ -63,6 +63,19 @@ public:
         cout << "NULL" << endl;
     }
 };
+node* swapadjacent(node* &head)
+{
+    //base case
+    if(head==NULL||head->next==NULL)
+    {
+        return head;
+
+    }
+    node* secondnode=head->next;
+    head->next=swapadjacent(secondnode->next);
+    secondnode->next=head;//reverse the link between first and second node
+    return secondnode;
+}
 
 int main()
 {
@@ -74,7 +87,7 @@ int main()
     ll1.insertAtTail(5);
     // ll1.insertAtTail( 6);
     ll1.display();
-    ll1.head = reorderlinkedlist(ll1.head);
+    ll1.head = swapadjacent(ll1.head);
     ll1.display();
     return 0;
 }
