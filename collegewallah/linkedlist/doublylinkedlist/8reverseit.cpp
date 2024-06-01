@@ -48,18 +48,23 @@ public:
         // return;
     
     }
-    void DeleteAtposition(int k)
+    void reverseDll(node* &head,node* &tail)
     {
-        node* temp=head;
-        int counter=1;
-        while(counter<k)
+        node* currptr=head;
+        while(currptr)
         {
-            temp=temp->next;
-            counter++;
+            node* nextptr=currptr->next;
+            currptr->next=currptr->prev;
+            currptr->prev=nextptr;
+            currptr=nextptr; 
+           
         }
-        temp->prev->next=temp->next;
-        temp->next->prev=temp->prev;
-        free(temp);
+        //swapping head and tail
+
+        node* newhead=tail;
+        tail=head;
+        head=newhead;
+
 
     }
 };
@@ -71,7 +76,7 @@ public:
         dll.insertAtEnd(3);
         dll.insertAtEnd(4);
         dll.display();
-        dll.DeleteAtposition(3);
+        dll.reverseDll(dll.head,dll.tail);
         dll.display();
         return 0;
     }
