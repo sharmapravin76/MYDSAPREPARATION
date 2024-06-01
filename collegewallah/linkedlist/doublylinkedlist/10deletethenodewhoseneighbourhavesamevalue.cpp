@@ -71,7 +71,7 @@ int main()
     dll.insertAtEnd(2);
     dll.insertAtEnd(1);
     dll.insertAtEnd(2);
-    dll.insertAtEnd(1);
+    dll.insertAtEnd(1); 
     dll.display();
     deletesameneighbour(dll.head, dll.tail);
     dll.display();
