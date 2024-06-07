@@ -28,15 +28,16 @@ vector<int> nse(vector<int> &arr)
 
 int main()
 {
-    int n;
-    cin >> n;
-    vector<int> v;
-    while (n--)
-    {
-        int x;
-        cin >> x;
-        v.push_back(x);
-    }
+    // int n;
+    // cin >> n;
+    // vector<int> v;
+    // while (n--)
+    // {
+    //     int x;
+    //     cin >> x;
+    //     v.push_back(x);
+    // }
+    vector<int>v={2,1,4,3};
     vector<int> res = nse(v);
     for (int i = 0; i < res.size(); i++)
     {
