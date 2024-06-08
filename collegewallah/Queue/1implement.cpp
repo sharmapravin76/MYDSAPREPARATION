@@ -58,6 +58,7 @@ public:
                 this->tail = NULL;
             oldhead->next = NULL;
             delete oldhead;
+            this->size--;
         }
     }
     int getsize()
@@ -70,7 +71,8 @@ public:
     }
     int front()
     {
-        if(this->head==NULL) return -1;
+        if (this->head == NULL)
+            return -1;
         return this->head->data;
     }
 };
