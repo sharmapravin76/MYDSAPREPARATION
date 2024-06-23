@@ -8,7 +8,7 @@ int fib(int n)
 }
 
 int main(){
-    int result=fib(8);
+    int result=fib(2);
     cout<<result;
     
     return 0;
