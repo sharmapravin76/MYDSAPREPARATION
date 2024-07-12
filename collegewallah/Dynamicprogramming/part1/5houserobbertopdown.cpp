@@ -8,7 +8,7 @@ public:
     vector<int> dp;
     
     int f(int i, vector<int>& arr) {
-        if (i >= arr.size())
+        if(i >= arr.size())
             return 0;
         if (dp[i] != -1)
             return dp[i];
