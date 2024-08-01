@@ -18,6 +18,16 @@ for(int i=0;i<n;i++)
 {//storing frequency of every element in input array
     m[input[i]]++;
 
+//it is just an example
+//[]
+// m[1]++
+// [1,1]
+//m[1]++
+//[1,2]
+//m[7]
+//[1,2] [7,1]
+//m[9]++
+//[1,2] [7,1] [9,1]
 }
 int sum=0;
 //finding sum of repetative element
