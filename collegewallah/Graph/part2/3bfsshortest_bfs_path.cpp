@@ -27,7 +27,7 @@ void bfs(int src, int dest, vector<int> &dist)
     qu.push(src);
     while (not qu.empty())
     {
-        int curr = qu.front();
+        int curr = qu.front();     
         cout<<curr<<" ";
         qu.pop();
         for (auto neighbour : graph[curr])
